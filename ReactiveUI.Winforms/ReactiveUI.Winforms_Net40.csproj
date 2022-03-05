@@ -50,12 +50,14 @@
     <DocumentationFile>bin\Release\Net40\ReactiveUI.Winforms.xml</DocumentationFile>
     <NoWarn>1591, 1573, 1711, 1587, 1570, 1572</NoWarn>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
-    <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Splat.Net40.1.6.2\lib\Net40\Splat.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -129,9 +131,14 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.ReactiveUI.Winforms_Net40.config" />
+    <None Include="key.snk" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\splat_net40\Splat\Splat-Net40.csproj">
+      <Project>{a4db5f18-f21c-48fd-80ea-ff27a281393c}</Project>
+      <Name>Splat-Net40</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ReactiveUI\ReactiveUI_Net40.csproj">
       <Project>{6d40d92b-5241-478e-8084-24ccf3c83bd6}</Project>
       <Name>ReactiveUI_Net40</Name>
