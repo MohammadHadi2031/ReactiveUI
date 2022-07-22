@@ -52,6 +52,9 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="Splat-Net40-SDKStyle, Version=1.6.2.0, Culture=neutral, PublicKeyToken=d2d95667495f9465, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SplatNet40.1.6.2\lib\net40\Splat-Net40-SDKStyle.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -176,12 +179,6 @@
   <ItemGroup>
     <None Include="key.snk" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\splat_net40\Splat\Splat-Net40.csproj">
-      <Project>{a4db5f18-f21c-48fd-80ea-ff27a281393c}</Project>
-      <Name>Splat-Net40</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

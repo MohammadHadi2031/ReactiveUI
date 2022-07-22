@@ -58,6 +58,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
+    <Reference Include="Splat-Net40-SDKStyle, Version=1.6.2.0, Culture=neutral, PublicKeyToken=d2d95667495f9465, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SplatNet40.1.6.2\lib\net40\Splat-Net40-SDKStyle.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -135,10 +138,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\splat_net40\Splat\Splat-Net40.csproj">
-      <Project>{a4db5f18-f21c-48fd-80ea-ff27a281393c}</Project>
-      <Name>Splat-Net40</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ReactiveUI\ReactiveUI_Net40.csproj">
       <Project>{6d40d92b-5241-478e-8084-24ccf3c83bd6}</Project>
       <Name>ReactiveUI_Net40</Name>
