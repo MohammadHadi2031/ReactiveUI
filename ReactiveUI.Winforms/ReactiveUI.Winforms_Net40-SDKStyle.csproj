@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <AssemblyName>ReactiveUI.Winforms</AssemblyName>
+    <TargetFramework>net40</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <Utf8Output>true</Utf8Output>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <RepositoryUrl>https://github.com/MohammadHadi2031/ReactiveUI.git</RepositoryUrl>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\Net40\</OutputPath>
+    <IntermediateOutputPath>obj\Debug\WinForms_Net40</IntermediateOutputPath>
+    <DefineConstants>TRACE;DEBUG;WINFORMS;NET_40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>ExtendedCorrectnessRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\Net40\</OutputPath>
+    <IntermediateOutputPath>obj\Release\Winforms_Net40\</IntermediateOutputPath>
+    <DefineConstants>TRACE;WINFORMS;NET_40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Net40\ReactiveUI.Winforms.xml</DocumentationFile>
+    <NoWarn>1591, 1573, 1711, 1587, 1570, 1572</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="packages.config" />
+    <None Remove="packages.ReactiveUI.Winforms_Net45.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ReactiveUI_Net40_SDKStyle" Version="8.0.30703" />
+    <PackageReference Include="SplatNet40" Version="1.6.2"></PackageReference>
+    <PackageReference Include="Microsoft.Bcl" Version="1.1.10"></PackageReference>
+    <PackageReference Include="Rx-Core" Version="2.2.5"></PackageReference>
+    <PackageReference Include="Rx-Interfaces" Version="2.2.5"></PackageReference>
+    <PackageReference Include="Rx-Linq" Version="2.2.5"></PackageReference>
+    <PackageReference Include="Rx-PlatformServices" Version="2.2.5"></PackageReference>
+    <PackageReference Include="Rx-Xaml" Version="2.2.5"></PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Winforms\ActivationForViewFetcher.cs" />
+    <Compile Include="Winforms\ObservableCollectionChangedToListChangedTransformer.cs" />
+    <Compile Include="Winforms\ReactiveDerivedBindingListMixins.cs" />
+    <Compile Include="Winforms\RoutedViewHost.cs" />
+    <Compile Include="Winforms\RoutedViewHost.Designer.cs">
+      <DependentUpon>RoutedViewHost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Winforms\ReactiveBindingList.cs" />
+    <Compile Include="Winforms\CreatesCommandBinding.cs" />
+    <Compile Include="Winforms\PlatformOperations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Winforms\Registrations.cs" />
+    <Compile Include="Winforms\ViewModelViewHost.cs" />
+    <Compile Include="Winforms\ViewModelViewHost.Designer.cs">
+      <DependentUpon>ViewModelViewHost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Winforms\WeakEventManagerShims.cs" />
+    <Compile Include="Winforms\WinformsCreatesObservableForProperty.cs" />
+    <Compile Include="Winforms\WinformsDefaultPropertyBinding.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+  </ItemGroup>
+  
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+</Project>

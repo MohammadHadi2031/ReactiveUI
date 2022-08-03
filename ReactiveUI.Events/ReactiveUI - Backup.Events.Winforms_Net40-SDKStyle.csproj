@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE72AB14-9ED2-44EB-93BB-B965F17D608E}</ProjectGuid>
+    <RootNamespace>ReactiveUI.Events.Winforms</RootNamespace>
+    <AssemblyName>ReactiveUI.Events.Winforms</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <WarningLevel>4</WarningLevel>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <RepositoryUrl>https://github.com/MohammadHadi2031/ReactiveUI.git</RepositoryUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\Net40\</OutputPath>
+    <IntermediateOutputPath>obj\Debug\Net40</IntermediateOutputPath>
+    <DefineConstants>TRACE;DEBUG;NET_40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\Net40\</OutputPath>
+    <IntermediateOutputPath>obj\Release\Net40</IntermediateOutputPath>
+    <DefineConstants>TRACE;NET_40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Net40\ReactiveUI.Events.Winforms.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Rx-Core" Version="2.2.5"></PackageReference>
+    <PackageReference Include="Rx-Interfaces" Version="2.2.5"></PackageReference>
+    <PackageReference Include="Rx-Linq" Version="2.2.5"></PackageReference>
+    <PackageReference Include="Rx-PlatformServices" Version="2.2.5"></PackageReference>
+    <PackageReference Include="Microsoft.Bcl" Version="1.1.10"></PackageReference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Events.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>%25SystemRoot%25\Microsoft.NET\Framework\v4.0.30319\msbuild.exe /p:Configuration=Release "$(ProjectDir)EventBuilder.csproj"
+"$(ProjectDir)EventBuilder.exe" "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" "$(ProjectDir)Events.mustache" &gt; "$(ProjectDir)Events.cs"
+del "$(ProjectDir)EventBuilder.exe"
+del "$(ProjectDir)EventBuilder.pdb"
+del "$(ProjectDir)Nustache.Core.dll"
+del "$(ProjectDir)Mono.Cecil.dll"
+del "$(ProjectDir)Mono.Cecil.pdb"</PreBuildEvent>
+  </PropertyGroup>
+
+</Project>

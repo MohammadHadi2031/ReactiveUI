@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8EF979A3-95E5-4B00-A8A9-ED6E5470C4D2}</ProjectGuid>
+    <RootNamespace>ReactiveUI.Events.Winforms</RootNamespace>
+    <AssemblyName>ReactiveUI.Events.Winforms</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+    <WarningLevel>4</WarningLevel>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <RepositoryUrl>https://github.com/MohammadHadi2031/ReactiveUI.git</RepositoryUrl>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\Net40\</OutputPath>
+    <IntermediateOutputPath>obj\Debug\Net40</IntermediateOutputPath>
+    <DefineConstants>TRACE;DEBUG;NET_40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\Net40\</OutputPath>
+    <IntermediateOutputPath>obj\Release\Net40</IntermediateOutputPath>
+    <DefineConstants>TRACE;NET_40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Net40\ReactiveUI.Events.Winforms.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Resources\**" />
+    <Compile Remove="WinMetadata.Win80\**" />
+    <Compile Remove="WinMetadata.Win81\**" />
+    <Compile Remove="WinMetadata.WPA81\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <EmbeddedResource Remove="WinMetadata.Win80\**" />
+    <EmbeddedResource Remove="WinMetadata.Win81\**" />
+    <EmbeddedResource Remove="WinMetadata.WPA81\**" />
+    <None Remove="Resources\**" />
+    <None Remove="WinMetadata.Win80\**" />
+    <None Remove="WinMetadata.Win81\**" />
+    <None Remove="WinMetadata.WPA81\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="EventBuilder.cs" />
+    <Compile Remove="SingleAwaitSubject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Events.mustache" />
+    <None Remove="generate_events.rb" />
+    <None Remove="Mono.Cecil.Mdb.dll" />
+    <None Remove="Mono.Cecil.Pdb.dll" />
+    <None Remove="Mono.Cecil.Rocks.dll" />
+    <None Remove="packages.config" />
+    <None Remove="packages.EventBuilder.config" />
+    <None Remove="packages.ReactiveUI.Events.config" />
+    <None Remove="packages.ReactiveUI.Events.Winforms_Net45.config" />
+    <None Remove="packages.ReactiveUI.Events_Android.config" />
+    <None Remove="packages.ReactiveUI.Events_Android_XS.config" />
+    <None Remove="packages.ReactiveUI.Events_iOS.config" />
+    <None Remove="packages.ReactiveUI.Events_iOS64.config" />
+    <None Remove="packages.ReactiveUI.Events_iOS_XS.config" />
+    <None Remove="packages.ReactiveUI.Events_Mac.config" />
+    <None Remove="packages.ReactiveUI.Events_Net40.config" />
+    <None Remove="packages.ReactiveUI.Events_Net45.config" />
+    <None Remove="packages.ReactiveUI.Events_WinRT.config" />
+    <None Remove="packages.ReactiveUI.Events_WinRT80.config" />
+    <None Remove="packages.ReactiveUI.Events_WP8.config" />
+    <None Remove="packages.ReactiveUI.Events_WP81.config" />
+    <None Remove="packages.ReactiveUI.Events_WPA81.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Rx-Core" Version="2.2.5"></PackageReference>
+    <PackageReference Include="Rx-Interfaces" Version="2.2.5"></PackageReference>
+    <PackageReference Include="Rx-Linq" Version="2.2.5"></PackageReference>
+    <PackageReference Include="Rx-PlatformServices" Version="2.2.5"></PackageReference>
+    <PackageReference Include="Microsoft.Bcl" Version="1.1.10"></PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Events.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>%25SystemRoot%25\Microsoft.NET\Framework\v4.0.30319\msbuild.exe /p:Configuration=Release "$(ProjectDir)EventBuilder.csproj"
+"$(ProjectDir)EventBuilder.exe" "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" "$(ProjectDir)Events.mustache" &gt; "$(ProjectDir)Events.cs"
+del "$(ProjectDir)EventBuilder.exe"
+del "$(ProjectDir)EventBuilder.pdb"
+del "$(ProjectDir)Nustache.Core.dll"
+del "$(ProjectDir)Mono.Cecil.dll"
+del "$(ProjectDir)Mono.Cecil.pdb"</PreBuildEvent>
+  </PropertyGroup>
+
+</Project>
