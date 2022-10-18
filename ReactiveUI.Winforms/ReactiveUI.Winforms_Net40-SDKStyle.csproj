@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <AssemblyName>ReactiveUI.Winforms</AssemblyName>
+    <AssemblyName>ReactiveUI.Winforms.Net40</AssemblyName>
     <TargetFramework>net40</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
@@ -55,9 +55,6 @@
     <PackageReference Include="Rx-Xaml" Version="2.2.5"></PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\CommonAssemblyInfo.cs">
-      <Link>Properties\CommonAssemblyInfo.cs</Link>
-    </Compile>
     <Compile Include="Winforms\ActivationForViewFetcher.cs" />
     <Compile Include="Winforms\ObservableCollectionChangedToListChangedTransformer.cs" />
     <Compile Include="Winforms\ReactiveDerivedBindingListMixins.cs" />
