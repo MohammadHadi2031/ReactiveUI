@@ -2,7 +2,7 @@ using System;
 using System.Reactive.Linq;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public static class ObservableLoggingMixin
     {

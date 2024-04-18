@@ -10,7 +10,7 @@ using System.Reactive.Linq;
 using System.Reactive.Disposables;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public class DependencyObjectObservableForProperty : ICreatesObservableForProperty
     {

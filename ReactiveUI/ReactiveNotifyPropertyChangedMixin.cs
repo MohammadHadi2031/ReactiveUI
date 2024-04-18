@@ -11,7 +11,7 @@ using System.Reflection;
 using System.Text;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public static class ReactiveNotifyPropertyChangedMixin
     {

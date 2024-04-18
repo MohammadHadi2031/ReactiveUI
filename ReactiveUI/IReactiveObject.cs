@@ -11,7 +11,7 @@ using Splat;
 using System.Collections.Generic;
 using System.Reactive;
 
-namespace ReactiveUI 
+namespace ReactiveUI.Net40 
 {
     public interface IReactiveObject : INotifyPropertyChanged, INotifyPropertyChanging, IEnableLogger 
     {

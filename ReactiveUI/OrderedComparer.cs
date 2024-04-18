@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// Convienience interface for providing a starting point for chaining comparers.

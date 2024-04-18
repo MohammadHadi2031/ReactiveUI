@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Reactive.Linq;
 using System.Reflection;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public static class ObservedChangedMixin
     {

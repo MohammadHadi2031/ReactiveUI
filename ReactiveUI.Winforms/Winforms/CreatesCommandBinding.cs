@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using System.Windows.Input;
 using MouseEventArgs = System.Windows.Forms.MouseEventArgs;
 
-namespace ReactiveUI.Winforms
+namespace ReactiveUI.Net40.Winforms
 {
     /// <summary>
     /// This binder is the default binder for connecting to arbitrary events

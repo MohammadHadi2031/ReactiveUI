@@ -4,8 +4,8 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8EF979A3-95E5-4B00-A8A9-ED6E5470C4D2}</ProjectGuid>
-    <RootNamespace>ReactiveUI.Events.Winforms</RootNamespace>
-    <AssemblyName>ReactiveUI.Events.Winforms</AssemblyName>
+    <RootNamespace>ReactiveUI.Net40.Events.Winforms</RootNamespace>
+    <AssemblyName>ReactiveUI.Net40.Events.Winforms</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <TargetFramework>net40</TargetFramework>
     <WarningLevel>4</WarningLevel>

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <AssemblyName>ReactiveUI.Winforms.Net40</AssemblyName>
+    <AssemblyName>ReactiveUI.Net40.Winforms</AssemblyName>
     <TargetFramework>net40</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
@@ -45,7 +45,6 @@
     <None Remove="packages.ReactiveUI.Winforms_Net45.config" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="ReactiveUI_Net40_SDKStyle" Version="8.0.30703" />
     <PackageReference Include="SplatNet40" Version="1.6.2"></PackageReference>
     <PackageReference Include="Microsoft.Bcl" Version="1.1.10"></PackageReference>
     <PackageReference Include="Rx-Core" Version="2.2.5"></PackageReference>
@@ -80,6 +79,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ReactiveUI\ReactiveUI_Net40_SDKStyle.csproj" />
   </ItemGroup>
   
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

@@ -11,7 +11,7 @@ using ReactiveUI;
 using System.Reactive.Disposables;
 using System.Reactive.Subjects;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public class AutoSuspendHelper : IEnableLogger
     {

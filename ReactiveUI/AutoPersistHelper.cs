@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public static class AutoPersistHelper
     {

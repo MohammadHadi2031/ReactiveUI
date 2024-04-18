@@ -14,9 +14,9 @@ using System.Windows.Input;
 using System.Linq.Expressions;
 using ReactiveUI;
 
-using LegacyRxCmd = ReactiveUI.Legacy.ReactiveCommand;
+using LegacyRxCmd = ReactiveUI.Net40.Legacy.ReactiveCommand;
 
-namespace ReactiveUI.Legacy
+namespace ReactiveUI.Net40.Legacy
 {
     /// <summary>
     /// ReactiveCommand is the default Command implementation in ReactiveUI, which

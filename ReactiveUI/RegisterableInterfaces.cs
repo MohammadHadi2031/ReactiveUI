@@ -9,7 +9,7 @@ using System.Reactive;
 using Splat;
 using System.Linq.Expressions;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public enum BindingDirection
     {

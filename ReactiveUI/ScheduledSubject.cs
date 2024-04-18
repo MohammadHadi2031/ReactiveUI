@@ -5,7 +5,7 @@ using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using System.Threading;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public class ScheduledSubject<T> : ISubject<T>
     {

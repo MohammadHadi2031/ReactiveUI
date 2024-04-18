@@ -10,7 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// ViewModelActivator is a helper class that you instantiate in your

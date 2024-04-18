@@ -8,7 +8,7 @@ using System.Text;
 using ReactiveUI;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public static class ViewLocator
     {

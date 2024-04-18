@@ -20,7 +20,7 @@ using System.Text;
 int maxFuncLength = 12;
 #>
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public static class WhenAnyMixin 
     {

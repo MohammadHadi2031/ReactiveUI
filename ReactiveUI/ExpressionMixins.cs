@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public static class ExpressionMixins
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reactive.Subjects;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public static class CompatMixins
     {

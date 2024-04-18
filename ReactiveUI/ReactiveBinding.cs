@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// This interface represents the result of a Bind/OneWayBind and gives

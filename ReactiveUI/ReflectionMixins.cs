@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// This file provides mixins for aiding in using the .NET 4.5 API in .NET 4.0.

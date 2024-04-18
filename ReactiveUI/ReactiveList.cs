@@ -17,7 +17,7 @@ using System.Globalization;
 using System.Diagnostics;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     [DebuggerDisplay("Count = {Count}")]
     [DebuggerTypeProxy(typeof(CollectionDebugView<>))]

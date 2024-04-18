@@ -1,4 +1,4 @@
-﻿namespace ReactiveUI.Winforms
+﻿namespace ReactiveUI.Net40.Winforms
 {
     using System;
     using System.Linq;

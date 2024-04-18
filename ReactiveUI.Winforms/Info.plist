@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleIdentifier</key>
-    <string>com.yourcompany.ReactiveUI.Cocoa</string>
+    <string>com.yourcompany.ReactiveUI.Net40.Cocoa</string>
     <key>CFBundleName</key>
-    <string>ReactiveUI.Cocoa</string>
+    <string>ReactiveUI.Net40.Cocoa</string>
     <key>CFBundleVersion</key>
     <string>1</string>
     <key>LSMinimumSystemVersion</key>

@@ -12,7 +12,7 @@ using Windows.UI.Xaml.Controls;
 using System.Windows.Controls;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// This content control will automatically load the View associated with
@@ -92,7 +92,7 @@ namespace ReactiveUI
                         return;
                     }
 
-                    var viewLocator = ViewLocator ?? ReactiveUI.ViewLocator.Current;
+                    var viewLocator = ViewLocator ?? ReactiveUI.Net40.ViewLocator.Current;
                     var view = viewLocator.ResolveView(x.ViewModel, x.Contract) ?? viewLocator.ResolveView(x.ViewModel, null);
 
                     if (view == null) {

@@ -5,10 +5,10 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
-using ReactiveUI;
+using ReactiveUI.Net40;
 using Splat;
 
-namespace ReactiveUI.Winforms
+namespace ReactiveUI.Net40.Winforms
 {
     [DefaultProperty("ViewModel")]
     public partial class ViewModelControlHost : UserControl, IReactiveObject, IViewFor
@@ -90,7 +90,7 @@ namespace ReactiveUI.Winforms
                     }
                 }
 
-                IViewLocator viewLocator = this.ViewLocator ?? ReactiveUI.ViewLocator.Current;
+                IViewLocator viewLocator = this.ViewLocator ?? ReactiveUI.Net40.ViewLocator.Current;
                 IViewFor view = viewLocator.ResolveView(x.ViewModel, x.Contract);
                 this.Content = view;
                 view.ViewModel = x.ViewModel;
@@ -122,7 +122,7 @@ namespace ReactiveUI.Winforms
             get { return this.content as Control; }
         }
 
-        [Category("ReactiveUI")]
+        [Category("ReactiveUI.Net40")]
         [Description("The default control when no viewmodel is specified")]
         public Control DefaultContent {
             get { return this.defaultContent; }
@@ -138,7 +138,7 @@ namespace ReactiveUI.Winforms
         [Browsable(false)]
         public IViewLocator ViewLocator { get; set; }
 
-        [Category("ReactiveUI")]
+        [Category("ReactiveUI.Net40")]
         [Description("The viewmodel to host.")]
         [Bindable(true)]
         public object ViewModel {
@@ -148,7 +148,7 @@ namespace ReactiveUI.Winforms
 
         object content;
 
-        [Category("ReactiveUI")]
+        [Category("ReactiveUI.Net40")]
         [Description("The Current View")]
         [Bindable(true)]
         public object Content {
@@ -158,7 +158,7 @@ namespace ReactiveUI.Winforms
 
         bool cacheViews;
 
-        [Category("ReactiveUI")]
+        [Category("ReactiveUI.Net40")]
         [Description("Cache Views")]
         [Bindable(true)]
         [DefaultValue(true)]

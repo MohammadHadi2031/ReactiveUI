@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
 
     /// <summary>

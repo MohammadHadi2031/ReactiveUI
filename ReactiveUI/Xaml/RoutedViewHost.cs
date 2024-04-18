@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Controls;
 using System.Windows.Controls;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// This control hosts the View associated with a Router, and will display
@@ -101,7 +101,7 @@ namespace ReactiveUI
                         return;
                     }
 
-                    var viewLocator = ViewLocator ?? ReactiveUI.ViewLocator.Current;
+                    var viewLocator = ViewLocator ?? ReactiveUI.Net40.ViewLocator.Current;
                     var view = viewLocator.ResolveView(x.Item1, x.Item2) ?? viewLocator.ResolveView(x.Item1, null);
 
                     if (view == null) {

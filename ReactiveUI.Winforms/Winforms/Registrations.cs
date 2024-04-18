@@ -5,12 +5,12 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Windows;
-using ReactiveUI;
+using ReactiveUI.Net40;
 using System.Reactive.Concurrency;
 using System.Windows.Forms;
 using Splat;
 
-namespace ReactiveUI.Winforms
+namespace ReactiveUI.Net40.Winforms
 {
     /// <summary>
     /// Ignore me. This class is a secret handshake between RxUI and RxUI.Xaml

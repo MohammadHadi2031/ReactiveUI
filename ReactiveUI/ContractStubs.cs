@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Specialized;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public class PropertyChangingEventArgs : EventArgs
     {
@@ -23,7 +23,7 @@ namespace ReactiveUI
     }
 }
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {    
     public interface INotifyCollectionChanging {
         event NotifyCollectionChangedEventHandler CollectionChanging;
@@ -31,7 +31,7 @@ namespace ReactiveUI
 }
 
 #if PORTABLE || WINRT
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     [AttributeUsage(AttributeTargets.All, Inherited = false, AllowMultiple = true)]
     public sealed class LocalizableAttribute : Attribute

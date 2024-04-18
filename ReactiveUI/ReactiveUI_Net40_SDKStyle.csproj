@@ -5,6 +5,7 @@
     <Version>8.0.30703</Version>
     <Utf8Output>true</Utf8Output>
     <SignAssembly>true</SignAssembly>
+    <RootNamespace>ReactiveUI.Net40</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>

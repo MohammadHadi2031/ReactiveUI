@@ -15,7 +15,7 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Documents;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public class XamlDefaultPropertyBinding : IDefaultPropertyBindingProvider
     {

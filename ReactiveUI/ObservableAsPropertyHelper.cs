@@ -9,7 +9,7 @@ using System.Reactive.Subjects;
 using Splat;
 using System.Reactive.Disposables;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// ObservableAsPropertyHelper is a class to help ViewModels implement

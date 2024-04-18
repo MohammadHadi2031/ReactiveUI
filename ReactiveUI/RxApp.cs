@@ -5,7 +5,7 @@ using System.Reactive.Concurrency;
 using System.Runtime.CompilerServices;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /*
      * N.B. Why we have this evil global class

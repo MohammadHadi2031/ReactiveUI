@@ -3,7 +3,7 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
 
-namespace ReactiveUI.Winforms
+namespace ReactiveUI.Net40.Winforms
 {
     static class ObservableCollectionChangedToListChangedTransformer
     {

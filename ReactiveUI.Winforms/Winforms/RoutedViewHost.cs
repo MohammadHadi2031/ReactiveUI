@@ -5,9 +5,9 @@ using System.Reactive.Disposables;
 using System.Reactive.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
-using ReactiveUI;
+using ReactiveUI.Net40;
 
-namespace ReactiveUI.Winforms
+namespace ReactiveUI.Net40.Winforms
 {
     [DefaultProperty("ViewModel")]
     public partial class RoutedControlHost : UserControl, IReactiveObject
@@ -54,7 +54,7 @@ namespace ReactiveUI.Winforms
                     return;
                 }
 
-                IViewLocator viewLocator = this.ViewLocator ?? ReactiveUI.ViewLocator.Current;
+                IViewLocator viewLocator = this.ViewLocator ?? ReactiveUI.Net40.ViewLocator.Current;
                 IViewFor view = viewLocator.ResolveView(x.ViewModel, x.Contract);
                 view.ViewModel = x.ViewModel;
 
@@ -83,14 +83,14 @@ namespace ReactiveUI.Winforms
             PropertyChangedEventManager.DeliverEvent(this, args);
         }
 
-        [Category("ReactiveUI")]
+        [Category("ReactiveUI.Net40")]
         [Description("The default control when no viewmodel is specified")]
         public Control DefaultContent {
             get { return this.defaultContent; }
             set { this.RaiseAndSetIfChanged(ref this.defaultContent, value); }
         }
 
-        [Category("ReactiveUI")]
+        [Category("ReactiveUI.Net40")]
         [Description("The router.")]
         public RoutingState Router {
             get { return this._Router; }

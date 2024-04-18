@@ -4,9 +4,9 @@ using System.Collections;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using ReactiveUI;
+using ReactiveUI.Net40;
 
-namespace ReactiveUI.Winforms
+namespace ReactiveUI.Net40.Winforms
 {
     public class ReactiveBindingList<T> : ReactiveList<T>,
         IList<T>, ICollection<T>, IEnumerable<T>,

@@ -19,7 +19,7 @@ using NSApplication = MonoTouch.UIKit.UIApplication;
 using MonoMac.AppKit;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// Ignore me. This class is a secret handshake between RxUI and RxUI.Xaml

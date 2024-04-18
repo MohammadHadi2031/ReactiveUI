@@ -8,7 +8,7 @@ using System.Reactive;
 using System.Windows.Input;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// IObservedChange is a generic interface that is returned from WhenAny()

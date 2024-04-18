@@ -15,7 +15,7 @@ using System.Linq.Expressions;
 using System.Reactive.Disposables;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public static class ReactiveCommand
     {

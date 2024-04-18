@@ -8,7 +8,7 @@ using System.Reactive.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public static class Reflection
     {

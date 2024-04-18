@@ -1,7 +1,7 @@
 using System;
 using System.Threading;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     sealed class RefcountDisposeWrapper
     {

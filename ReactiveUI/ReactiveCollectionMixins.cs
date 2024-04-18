@@ -13,7 +13,7 @@ using Splat;
 using System.Reactive.Concurrency;
 using System.Linq;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// This class represents a change-notifying Collection which is derived from

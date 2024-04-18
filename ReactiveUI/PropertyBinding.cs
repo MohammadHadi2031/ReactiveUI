@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// This class provides extension methods for the ReactiveUI view binding mechanism.

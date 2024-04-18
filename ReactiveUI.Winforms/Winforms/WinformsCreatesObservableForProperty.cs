@@ -8,7 +8,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using Splat;
 
-namespace ReactiveUI.Winforms
+namespace ReactiveUI.Net40.Winforms
 {
     public class WinformsCreatesObservableForProperty : ICreatesObservableForProperty
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// Helper class used by ReactiveUI to determine the default property in an

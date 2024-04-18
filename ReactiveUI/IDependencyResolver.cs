@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     public static class DependencyResolverMixins
     {

@@ -7,7 +7,7 @@ using System.Reactive;
 using System.Reactive.Concurrency;
 using System.Reactive.Linq;
 
-namespace ReactiveUI.Winforms
+namespace ReactiveUI.Net40.Winforms
 {
     /// <summary>
     /// IReactiveDerivedList represents a bindinglist whose contents will "follow" another

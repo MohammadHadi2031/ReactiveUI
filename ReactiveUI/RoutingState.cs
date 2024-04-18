@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 using System.Windows.Input;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// RoutingState manages the ViewModel Stack and allows ViewModels to

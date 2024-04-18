@@ -14,7 +14,7 @@ using System.Reactive.Concurrency;
 using System.Runtime.CompilerServices;
 using Splat;
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     /// <summary>
     /// ReactiveObject is the base object for ViewModel classes, and it

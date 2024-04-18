@@ -5,7 +5,7 @@ using Windows.UI.Xaml;
 using System.Windows;
 #endif
 
-namespace ReactiveUI
+namespace ReactiveUI.Net40
 {
     [Flags]
     public enum BooleanToVisibilityHint
